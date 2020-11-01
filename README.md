@@ -9,7 +9,7 @@ Example:
 docker run --rm -p 6800:6800 --name aria2 -d \
 -e RPC_SECRET=xxx \
 -v $HOME/Downloads:/downloads \
-ndthuan/aria2-alpine
+derraid/aria2-alpine
 ```
 
 ## Supported environment variables
