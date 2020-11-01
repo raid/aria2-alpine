@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:latest
 
 VOLUME /downloads
 
@@ -10,4 +10,4 @@ RUN chmod +x /entrypoint.sh
 ENTRYPOINT [ "/entrypoint.sh" ]
 CMD aria2c --conf-path=/etc/aria2.conf
 
-RUN apk add --update --no-cache aria2 && rm -rf /var/cache/apk/*
+RUN apk add --no-cache aria2
